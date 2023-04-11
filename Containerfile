@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM registry.access.redhat.com/ubi9/ubi-minimal:latest
 
 # fuse-device-plugin binary based on architecture
 ARG build_arch
