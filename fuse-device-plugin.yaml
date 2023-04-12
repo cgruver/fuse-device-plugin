@@ -12,6 +12,8 @@ spec:
       labels:
         name: fuse-device-plugin-ds
     spec:
+      nodeSelector:
+        node-role.kubernetes.io/worker: ""
       hostNetwork: true
       containers:
       - image: quay.io/cgruver0/che/fuse-device-plugin:v1.1
